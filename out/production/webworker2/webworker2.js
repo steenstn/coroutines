@@ -1,5 +1,5 @@
 importScripts("https://steenstn.github.io/coroutines/out/production/coroutines/lib/kotlin.js")
-f (typeof kotlin === 'undefined') {
+if (typeof kotlin === 'undefined') {
   throw new Error("Error loading module 'webworker2'. Its dependency 'kotlin' was not found. Please, check whether 'kotlin' is loaded prior to 'webworker2'.");
 }
 var webworker2 = function (_, Kotlin) {
