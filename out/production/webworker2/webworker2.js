@@ -1,3 +1,4 @@
+importScripts('out/production/coroutines/lib/kotlin.js')
 if (typeof kotlin === 'undefined') {
   throw new Error("Error loading module 'webworker2'. Its dependency 'kotlin' was not found. Please, check whether 'kotlin' is loaded prior to 'webworker2'.");
 }
