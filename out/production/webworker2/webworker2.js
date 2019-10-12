@@ -1,18 +1,20 @@
 importScripts("https://steenstn.github.io/coroutines/out/production/coroutines/lib/kotlin.js")
-if (typeof kotlin === 'undefined') {
+f (typeof kotlin === 'undefined') {
   throw new Error("Error loading module 'webworker2'. Its dependency 'kotlin' was not found. Please, check whether 'kotlin' is loaded prior to 'webworker2'.");
 }
 var webworker2 = function (_, Kotlin) {
   'use strict';
   var println = Kotlin.kotlin.io.println_s8jyv4$;
-  var Unit = Kotlin.kotlin.Unit;
-  function main$lambda(event) {
-    println('in listener');
-    return Unit;
-  }
+  var Math_0 = Math;
   function main() {
-    println('webwoerk');
-    self.addEventListener('message', main$lambda);
+    println('in webworker');
+    for (var i = 0; i <= 1000000; i++) {
+      var y = Math_0.sqrt(i);
+      for (var j = 0; j <= 100000; j++) {
+        var x = Math_0.sqrt(j);
+      }
+    }
+    self.postMessage('webworker done!');
   }
   _.main = main;
   main();
