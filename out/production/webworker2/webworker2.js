@@ -10,6 +10,7 @@ var webworker2 = function (_, Kotlin) {
     return Unit;
   }
   function main() {
+    importScripts('out/production/coroutines/lib/kotlin.js');
     println('webwoerk');
     self.addEventListener('message', main$lambda);
   }
