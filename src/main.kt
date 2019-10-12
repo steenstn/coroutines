@@ -6,7 +6,7 @@ import kotlin.coroutines.suspendCoroutine
 import kotlin.math.sqrt
 
  suspend fun main() {
-     val worker = Worker("../webworker2/webworker2.js")
+     val worker = Worker("out/production/webworker2/webworker2.js")
 
      worker.postMessage("test")
     println("woop")
