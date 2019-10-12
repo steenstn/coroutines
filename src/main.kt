@@ -1,4 +1,4 @@
-
+//importScripts("https://steenstn.github.io/coroutines/out/production/coroutines/lib/kotlin.js")
 import kotlinx.coroutines.*
 import org.w3c.dom.Worker
 import org.w3c.dom.WorkerOptions
@@ -8,7 +8,7 @@ import kotlin.math.sqrt
  suspend fun main() {
      val worker = Worker("out/production/webworker2/webworker2.js")
 
-     worker.postMessage("test")
+   //  worker.postMessage("test")
     println("woop")
 
     GlobalScope.launch { slowMethod() }

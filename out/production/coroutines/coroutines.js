@@ -74,7 +74,6 @@ var coroutines = function (_, Kotlin, $module$kotlinx_coroutines_core) {
   }
   function main(continuation) {
     var worker = new Worker('out/production/webworker2/webworker2.js');
-    worker.postMessage('test');
     println('woop');
     launch(coroutines.GlobalScope, void 0, void 0, main$lambda);
     println('end of main');

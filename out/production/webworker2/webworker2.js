@@ -11,7 +11,6 @@ var webworker2 = function (_, Kotlin) {
     return Unit;
   }
   function main() {
-    console.log('test');
     println('webwoerk');
     self.addEventListener('message', main$lambda);
   }
