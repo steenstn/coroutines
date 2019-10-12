@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="KotlinJavaScript" type="kotlin.js">
+    <CLASSES>
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-js.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/kotlinx-coroutines-core-js-1.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$KOTLIN_BUNDLED$/lib/kotlin-stdlib-js-sources.jar!/" />
+    </SOURCES>
+    <jarDirectory url="jar://$PROJECT_DIR$/src/kotlinx-coroutines-core-js-1.3.2.jar!/" recursive="false" />
+  </library>
+</component>
